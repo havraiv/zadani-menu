@@ -19,7 +19,10 @@ body {
 }
 
 ul {
-  margin: 0;
+  margin: 20px 0 0 0;
+  list-style: none;
+  display: inline;
+  text-align: center;
 }
 
 a {
@@ -28,6 +31,7 @@ a {
   color: #e74c3c;
   display: block;
   padding: 10px 20px;
+  margin: 2px;
 }
 
 a:hover {
@@ -43,3 +47,32 @@ a:hover {
 	- 640px
 	- 1000px
 */
+@media (min-width: 640px) {
+  ul {
+    display: flex;
+  }
+
+  li {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hlavicka {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  ul {
+    justify-content: flex-end;
+    margin: 0;
+
+  }
+
+  li {
+    width: auto;
+  }
+
+
+}
